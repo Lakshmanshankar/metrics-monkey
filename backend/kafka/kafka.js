@@ -45,9 +45,9 @@ export async function deleteTopics(topicName) {
 }
 
 // case 1 -> create a topic
-// createTopic("brainless-bison").catch((error) => {
-//     console.error(`Failed to create topic: ${error}`);
-// }).then(e => console.log('topic created'));
+createTopic("brainless-bison").catch((error) => {
+    console.error(`Failed to create topic: ${error}`);
+}).then(e => console.log('topic created'));
 
 // case 2 -> check if topic exists
 // isTopicExists('test').then((result) => {

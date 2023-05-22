@@ -31,7 +31,7 @@ for More Info see 4. Setup Kafka
 1. Clone the Repository
 
 ```sh
-git clone https:
+git clone httscreenshotsps://github.com/Lakshmanshankar/metrics-monkey.git
 ```
 
 2. Install the Dependencies

@@ -17,10 +17,14 @@ const produceMessages = async () => {
   await producer.send({
     topic: 'brainless-bison', 
     messages: [
-      { value: JSON.stringify(await basicinfo) },
-      { value: JSON.stringify(await cpuinfo()) },
-      { value: JSON.stringify(await memoryinfo()) },
-      { value: JSON.stringify(await diskinfo()) },
+      {
+        value: JSON.stringify({
+          basicinfo: await basicinfo,
+          cpuinfo: await cpuinfo(),
+          memoryinfo: await memoryinfo(),
+          diskinfo: await diskinfo(),
+        }),
+      },
     ],
   });
   await producer.disconnect();
